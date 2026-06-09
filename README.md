@@ -15,18 +15,18 @@ Windows 右键菜单路径复制工具。在文件和文件夹的右键菜单中
 
 ## 安装
 
-### Scoop (推荐)
+### Scoop
+
+提交至官方 bucket 后可直接安装：
 
 ```powershell
-scoop install https://raw.githubusercontent.com/Siberian_Crane/Win-Copath/main/bucket/wcpath.json
+scoop install wcpath
 ```
-
-或手动下载 release 并放入 Scoop 的 `apps` 目录。
 
 ### 手动安装
 
-1. 从 [Releases](https://github.com/Siberian_Crane/Win-Copath/releases) 下载 `wcpath.exe`
-2. 将 `wcpath.exe` 放入一个已添加到 PATH 的目录
+1. 从 [Releases](https://github.com/Siberian_Crane/Win-Copath/releases) 下载 `wcpath-windows-amd64.zip`
+2. 解压后将 `wcpath.exe` 放入一个已添加到 PATH 的目录
 
 ## 使用
 
