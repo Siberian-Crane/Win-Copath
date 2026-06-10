@@ -75,14 +75,6 @@ This project was collaboratively developed by two models: `mimo-v2.5-pro` and `M
 
 The context menu registry design of this tool references the implementation of PowerShell 7, using `ExtendedSubCommandsKey` to share the submenu definition and avoid duplicate registration.
 
-## Community
-
-Join the community:
-
-- **Discord**: https://discord.gg/example
-- **Telegram**: https://t.me/example
-- **Matrix**: https://matrix.to/#/#example:matrix.org
-
 ## License
 
 MIT

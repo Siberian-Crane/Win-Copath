@@ -75,14 +75,6 @@ go build -o wcpath.exe .
 
 本软件的右键菜单注册表设计参考了 PowerShell 7 的实现方式，使用 `ExtendedSubCommandsKey` 共享子菜单定义，避免重复注册。
 
-## 社区
-
-欢迎加入社区交流：
-
-- **Discord**: https://discord.gg/example
-- **Telegram**: https://t.me/example
-- **Matrix**: https://matrix.to/#/#example:matrix.org
-
 ## License
 
 MIT
