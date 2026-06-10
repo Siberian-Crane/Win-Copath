@@ -48,7 +48,7 @@ After running "wcpath on", you can right-click on any file or folder
 to see the "Win Copath" submenu with four path format options:
   / (正斜杠)            e.g. C:/Users/test/file.txt
   \ (反斜杠)            e.g. C:\Users\test\file.txt
-  "/\" (引号正斜杠)     e.g. "C:/Users/test/file.txt"
+  "/" (引号正斜杠)     e.g. "C:/Users/test/file.txt"
   "\\" (引号反斜杠)      e.g. "C:\\Users\\test\\file.txt"
 
 Requires Administrator privileges to modify the registry.`)

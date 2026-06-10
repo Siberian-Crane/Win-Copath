@@ -15,12 +15,10 @@ Windows 右键菜单路径复制工具。在文件和文件夹的右键菜单中
 
 ## 安装
 
-### Scoop
-
-提交至官方 bucket 后可直接安装：
+### WinGet (推荐)
 
 ```powershell
-scoop install wcpath
+winget install Siberian_Crane.WinCopath
 ```
 
 ### 手动安装

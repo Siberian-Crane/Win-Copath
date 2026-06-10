@@ -2,7 +2,7 @@ package main
 
 const (
 	appName       = "Win Copath"
-	menuKeyName   = "Win-Copath"
+	menuKeyName   = "Win Copath"
 	clipboardFile = "wcpath-clip.ps1"
 )
 
@@ -16,5 +16,5 @@ var pathFormats = []pathFormat{
 	{flag: "fwd", label: "/ (正斜杠)"},
 	{flag: "bck", label: "\\ (反斜杠)"},
 	{flag: "qfwd", label: `"/" (引号正斜杠)`},
-	{flag: "qbck", label: `"\\\" (引号反斜杠)`},
+	{flag: "qbck", label: `"\\" (引号反斜杠)`},
 }
