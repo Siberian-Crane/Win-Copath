@@ -71,7 +71,7 @@ go build -o wcpath.exe .
 
 本项目由 `mimo-v2.5-pro` 和 `MiniMax-M3` 两款模型共同协作开发。
 
-## 参考与致谢
+## 参考
 
 本软件的右键菜单注册表设计参考了 PowerShell 7 的实现方式，使用 `ExtendedSubCommandsKey` 共享子菜单定义，避免重复注册。
 
