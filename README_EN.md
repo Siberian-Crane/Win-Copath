@@ -8,12 +8,12 @@ A Windows right-click menu path copy tool. Adds a "Win Copath" option to the con
 
 Right-click on a file or folder to display the "Win Copath" submenu, which contains four options:
 
-| Option | Format | Example |
-|----------------|---------|-------------------------------|
-| `/ (Forward Slash)` | Forward slash | `C:/Users/test/file.txt` |
-| `\ (Backslash)` | Backslash | `C:\Users\test\file.txt` |
-| `"/" (Quoted Forward Slash)` | Quoted forward slash | `"C:/Users/test/file.txt"` |
-| `"\\" (Quoted Backslash)` | Quoted backslash | `"C:\\Users\\test\\file.txt"` |
+| Option                       | Format               | Example                       |
+|------------------------------|----------------------|-------------------------------|
+| `/ (Forward Slash)`          | Forward slash        | `C:/Users/test/file.txt`      |
+| `\ (Backslash)`              | Backslash            | `C:\Users\test\file.txt`      |
+| `"/" (Quoted Forward Slash)` | Quoted forward slash | `"C:/Users/test/file.txt"`    |
+| `"\\" (Quoted Backslash)`    | Quoted backslash     | `"C:\\Users\\test\\file.txt"` |
 
 ## Installation
 
@@ -21,13 +21,6 @@ Right-click on a file or folder to display the "Win Copath" submenu, which conta
 
 ```powershell
 choco install wincopath
-```
-
-### Scoop
-
-```powershell
-scoop bucket add copath https://github.com/Siberian-Crane/Win-Copath
-scoop install wincopath
 ```
 
 ### Manual Installation

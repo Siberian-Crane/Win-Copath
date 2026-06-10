@@ -17,8 +17,6 @@ Windows 右键菜单路径复制工具。在文件和文件夹的右键菜单中
 
 ## 安装
 
-### WinGet (推荐)
-
 ### Chocolatey
 
 ```powershell
