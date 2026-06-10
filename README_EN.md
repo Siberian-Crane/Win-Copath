@@ -1,5 +1,7 @@
 # Win-Copath
 
+[README.md](https://github.com/Siberian-Crane/Win-Copath/blob/main/README.md)
+
 A Windows right-click menu path copy tool. Adds a "Win Copath" option to the context menu of files and folders, supporting four path formats for copying.
 
 ## Features
