@@ -1,9 +1,10 @@
 package main
 
 const (
-	appName       = "Win Copath"
-	menuKeyName   = "Win Copath"
-	clipboardFile = "wcpath-clip.ps1"
+	appName          = "Win Copath"
+	menuKeyName      = "Win Copath"
+	clipboardFile    = "wcpath-clip.ps1"
+	clipboardVBSFile = "wcpath-clip.vbs"
 )
 
 // 路径格式定义
