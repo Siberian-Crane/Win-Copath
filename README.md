@@ -54,9 +54,32 @@ go build -o wcpath.exe .
 .\wcpath.exe copy fwd "C:\test\file.txt"
 ```
 
+## 注册表位置
+
+启用右键菜单（`wcpath on`）后，软件会在以下位置创建注册表项：
+
+- 计算机\HKEY_CLASSES_ROOT\Directory\Background\shell\Win Copath
+- 计算机\HKEY_CLASSES_ROOT\Directory\ContextMenus\Win-Copath
+
+> 说明：实际还会创建 `HKEY_CLASSES_ROOT\Directory\shell\Win Copath`（右键文件夹）和 `HKEY_CLASSES_ROOT\*\shell\Win Copath`（右键文件）两个父项，三者都通过 `ExtendedSubCommandsKey` 指向同一份 `Directory\ContextMenus\Win-Copath` 子菜单定义，避免重复注册。
+
+如需手动排查或清理，可用 `regedit` 打开上述位置，或直接运行 `wcpath off` 移除。
+
 ## 开发协作
 
 本项目由 `mimo-v2.5-pro` 和 `MiniMax-M3` 两款模型共同协作开发。
+
+## 参考与致谢
+
+本软件的右键菜单注册表设计参考了 PowerShell 7 的实现方式，使用 `ExtendedSubCommandsKey` 共享子菜单定义，避免重复注册。
+
+## 社区
+
+欢迎加入社区交流：
+
+- **Discord**: https://discord.gg/example
+- **Telegram**: https://t.me/example
+- **Matrix**: https://matrix.to/#/#example:matrix.org
 
 ## License
 
