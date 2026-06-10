@@ -1,0 +1,23 @@
+# Created using wingetcreate
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.9.0.schema.json
+
+PackageIdentifier: Siberian-Crane.WinCopath
+PackageVersion: 1.0.0
+PackageLocale: zh-CN
+Publisher: Siberian-Crane
+PublisherUrl: https://github.com/Siberian-Crane
+PublisherSupportUrl: https://github.com/Siberian-Crane/Win-Copath/issues
+PackageName: WinCopath
+PackageUrl: https://github.com/Siberian-Crane/Win-Copath
+License: MIT
+LicenseUrl: https://github.com/Siberian-Crane/Win-Copath/blob/main/LICENSE
+ShortDescription: Windows 右键菜单路径复制工具，支持正斜杠、反斜杠及其引号包裹共四种路径格式。
+Tags:
+  - clipboard
+  - copy
+  - path
+  - right-click
+  - context-menu
+  - windows
+ManifestType: defaultLocale
+ManifestVersion: 1.9.0
