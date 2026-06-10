@@ -1,3 +1,3 @@
-module github.com/Siberian_Crane/Win-Copath
+module github.com/Siberian-Crane/Win-Copath
 
 go 1.21
