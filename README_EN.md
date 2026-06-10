@@ -17,10 +17,17 @@ Right-click on a file or folder to display the "Win Copath" submenu, which conta
 
 ## Installation
 
-### WinGet (Recommended)
+### Chocolatey
 
 ```powershell
-winget install Siberian-Crane.WinCopath
+choco install wincopath
+```
+
+### Scoop
+
+```powershell
+scoop bucket add copath https://github.com/Siberian-Crane/Win-Copath
+scoop install wincopath
 ```
 
 ### Manual Installation

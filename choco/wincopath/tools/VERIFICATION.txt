@@ -1,0 +1,24 @@
+VERIFICATION
+============
+Verification is intended to assist the Chocolatey moderators and reviewers
+in verifying that this package (e.g. that the package is not malicious).
+
+This package downloads the official release binary directly from the
+Siberian-Crane/Win-Copath GitHub repository:
+
+  https://github.com/Siberian-Crane/Win-Copath/releases/download/v1.0.0/wcpath_windows_amd64.exe
+
+The downloaded binary's SHA-256 checksum is verified against the value pinned
+in `tools/chocolateyinstall.ps1`:
+
+  B4FFC89AEC56C9BBB4BA4406F3D2A85E6EA43651AB6420C486748C41B1485D53
+
+You can independently verify the source code, build process, and release
+artifacts at:
+
+  https://github.com/Siberian-Crane/Win-Copath
+
+The package does not run any custom install/uninstall logic other than
+Chocolatey's standard zip extraction. The uninstall script additionally calls
+`wcpath off` (if available) to remove the right-click menu entries the user
+may have previously enabled.

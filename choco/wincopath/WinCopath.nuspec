@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>WinCopath</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/Siberian-Crane/Win-Copath/tree/main/choco/wincopath</packageSourceUrl>
+    <owners>Siberian-Crane</owners>
+    <title>WinCopath</title>
+    <authors>Siberian-Crane</authors>
+    <projectUrl>https://github.com/Siberian-Crane/Win-Copath</projectUrl>
+    <licenseUrl>https://github.com/Siberian-Crane/Win-Copath/blob/main/LICENSE</licenseUrl>
+    <projectSourceUrl>https://github.com/Siberian-Crane/Win-Copath</projectSourceUrl>
+    <docsUrl>https://github.com/Siberian-Crane/Win-Copath#readme</docsUrl>
+    <bugTrackerUrl>https://github.com/Siberian-Crane/Win-Copath/issues</bugTrackerUrl>
+    <iconUrl>https://raw.githubusercontent.com/Siberian-Crane/Win-Copath/main/choco/wincopath/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>clipboard path context-menu windows cli admin foss</tags>
+    <summary>Windows right-click menu path copy tool with four path formats</summary>
+    <description><![CDATA[
+# WinCopath
+
+A Windows right-click menu path copy tool. Adds a "Win Copath" option to the context menu of files and folders, supporting four path formats for copying.
+
+## Features
+
+Right-click on a file or folder to display the "Win Copath" submenu, which contains four options:
+
+- `/ (Forward Slash)` — `C:/Users/test/file.txt`
+- `\ (Backslash)` — `C:\Users\test\file.txt`
+- `"/" (Quoted Forward Slash)` — `"C:/Users/test/file.txt"`
+- `"\\" (Quoted Backslash)` — `"C:\\Users\\test\\file.txt"`
+
+## Usage
+
+After installation, the right-click menu will NOT be modified by default. You need to enable it manually (run PowerShell as Administrator):
+
+```
+wcpath on     # Add Win Copath to the right-click menu
+wcpath off    # Remove Win Copath from the right-click menu
+wcpath help   # Show help
+```
+
+## Notes
+
+- Requires Windows 10 or later
+- Requires administrator privileges to modify the registry
+- The registry design references PowerShell 7 and uses `ExtendedSubCommandsKey` to share the submenu definition
+]]></description>
+    <releaseNotes><![CDATA[
+Initial release of WinCopath v1.0.0.
+]]></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
