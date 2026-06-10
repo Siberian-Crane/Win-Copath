@@ -54,6 +54,10 @@ go build -o wcpath.exe .
 .\wcpath.exe copy fwd "C:\test\file.txt"
 ```
 
+## 开发协作
+
+本项目由 `mimo-v2.5-pro` 和 `MiniMax-M3` 两款模型共同协作开发。
+
 ## License
 
 MIT
