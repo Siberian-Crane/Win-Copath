@@ -23,8 +23,8 @@ winget install Siberian_Crane.WinCopath
 
 ### 手动安装
 
-1. 从 [Releases](https://github.com/Siberian_Crane/Win-Copath/releases) 下载 `wcpath-windows-amd64.zip`
-2. 解压后将 `wcpath.exe` 放入一个已添加到 PATH 的目录
+1. 从 [Releases](https://github.com/Siberian-Crane/Win-Copath/releases) 下载 `wcpath_windows_amd64.exe`
+2. 将 `wcpath.exe` 放入一个已添加到 PATH 的目录（如 `C:\Windows\System32`）
 
 ## 使用
 
