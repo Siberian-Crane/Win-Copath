@@ -19,21 +19,10 @@ Windows 右键菜单路径复制工具。在文件和文件夹的右键菜单中
 
 ### WinGet (推荐)
 
-```powershell
-winget install Siberian-Crane.WinCopath
-```
-
 ### Chocolatey
 
 ```powershell
 choco install wincopath
-```
-
-### Scoop
-
-```powershell
-scoop bucket add copath https://github.com/Siberian-Crane/Win-Copath
-scoop install wincopath
 ```
 
 ### 手动安装

@@ -1,15 +1,20 @@
 $ErrorActionPreference = 'Stop'
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-# Remove the context menu entries if the user previously enabled them
-# (only runs if the binary is still on disk; otherwise the user can rerun `wcpath off` manually).
-$wcpathCmd = Get-Command wcpath -ErrorAction SilentlyContinue
-if ($wcpathCmd) {
+# Try to remove the context menu entries before deleting the binary.
+# Prefer the binary co-located with this script (tools\wcpath.exe) so the call
+# works even when the user has not refreshed their PATH in the current
+# PowerShell session. Fall back to whatever is on PATH.
+$wcpathExe = Join-Path $toolsDir 'wcpath.exe'
+if (-not (Test-Path $wcpathExe)) { $wcpathExe = (Get-Command wcpath -ErrorAction SilentlyContinue).Source }
+if ($wcpathExe) {
   try {
-    & wcpath off | Out-Null
+    & $wcpathExe off | Out-Null
   } catch {
     Write-Warning "Failed to remove context menu entries during uninstall: $_"
   }
+} else {
+  Write-Warning "wcpath.exe not found; registry entries may need to be removed manually (run 'wcpath off' or delete HKCR\Directory\ContextMenus\Win-Copath)."
 }
 
 Uninstall-ChocolateyZipPackage $env:ChocolateyPackageName
