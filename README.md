@@ -1,5 +1,7 @@
 # Win-Copath
 
+[README_EN.md](https://github.com/Siberian-Crane/Win-Copath/blob/main/README_EN.md)
+
 Windows 右键菜单路径复制工具。在文件和文件夹的右键菜单中添加 "Win Copath" 选项，支持四种路径格式复制。
 
 ## 功能
